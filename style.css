@@ -1,0 +1,114 @@
+body {
+  background: #EEE;
+}
+/*
+* {
+  position: relative;
+}
+*/
+#keyboard {
+  width: 100%;
+  /*background: #444;
+  display: block;
+  float: left;*/
+  z-index: -100;
+  padding: 10px;
+  /*top: 0;*/
+}
+
+.key {
+  position: relative;
+}
+
+
+.white{
+  width: 30px;
+  height: 100px;
+  background: #fff;
+  display: block;
+  float: left;
+  border-right: 1px solid #666;
+  -webkit-box-shadow: 0 10px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: -10px;
+  z-index: -1;
+}
+
+.black {
+  width: 20px;
+  height: 60px;
+  margin-left: -10px;
+  z-index: 2;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.36, rgb(0,0,0)),
+    color-stop(0.09, rgb(0,0,0)),
+    color-stop(1, rgb(115,115,115))
+  );
+  background: -moz-linear-gradient(
+    center bottom,
+    rgb(0,0,0) 36%,
+    rgb(0,0,0) 9%,
+    rgb(115,115,115) 100%
+  );
+  display: block;
+  float: left;
+  border-right: 1px solid #666;
+  -webkit-box-shadow: 0 10px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.white:hover, .white-down {
+  /*-webkit-box-shadow: -10px -10px 0px #777;*/
+  -webkit-box-shadow: 0 6px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, rgb(222,222,222)),
+    color-stop(0.09, rgb(227,227,227)),
+    color-stop(1, rgb(247,247,247))
+  );
+  background: -moz-linear-gradient(
+    center bottom,
+    rgb(222,222,222) 0%,
+    rgb(227,227,227) 9%,
+    rgb(247,247,247) 100%
+  );
+}
+
+.black:hover, .black-down {
+  /*-webkit-box-shadow: -10px -10px 0px #777;*/
+  -webkit-box-shadow: 0 6px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.36, rgb(0,0,0)),
+    color-stop(0.09, rgb(0,0,0)),
+    color-stop(1, rgb(85,85,85))
+  );
+  background: -moz-linear-gradient(
+    center bottom,
+    rgb(0,0,0) 36%,
+    rgb(0,0,0) 9%,
+    rgb(115,115,115) 100%
+
+  );
+}
+
+.cf {
+  /*width: 20px;*/
+  margin: 0;
+}
+
+.active-octave {
+  border: 1px solid rgba(0,40,215,0.7);
+  background: rgba(0,100,255,0.3);
+  float: left;
+  z-index: 100;
+}
