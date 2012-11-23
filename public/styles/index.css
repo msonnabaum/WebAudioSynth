@@ -1,0 +1,369 @@
+/* line 16, ../../css/index.scss */
+body {
+  background: #333;
+  color: #DDD;
+}
+
+/* line 21, ../../css/index.scss */
+#page {
+  *zoom: 1;
+  margin: auto;
+  width: 81em;
+  max-width: 100%;
+}
+/* line 38, ../../../../../../../usr/local/Cellar/ruby/1.9.2-p290/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 26, ../../css/index.scss */
+#keyboard {
+  padding-left: 50px;
+  width: 98%;
+  overflow: hidden;
+  z-index: -100;
+  padding: 10px;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-box;
+  display: box;
+  clear: both;
+  margin-left: 1.235%;
+  margin-right: 1.235%;
+}
+
+/* line 36, ../../css/index.scss */
+#keys-playable {
+  width: 640px;
+  border: 10px #000 solid;
+}
+
+/* line 41, ../../css/index.scss */
+#keys-wrapper {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-box;
+  display: box;
+  /*margin-left: -675px;*/
+  margin-left: -1290px;
+}
+
+/* line 47, ../../css/index.scss */
+.key {
+  position: relative;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+}
+/* line 7, ../../../../../../../usr/local/Cellar/ruby/1.9.2-p290/lib/ruby/gems/1.9.1/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.key {
+  *display: inline;
+}
+
+/* line 52, ../../css/index.scss */
+.white {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  width: 60px;
+  height: 200px;
+  background: #fff;
+  float: left;
+  border-right: 1px solid #666;
+  -moz-box-shadow: 0 10px 2px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 10px 2px 0 rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 10px 2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 2px 0 rgba(0, 0, 0, 0.15);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  margin-left: -20px;
+  z-index: -1;
+}
+
+/* line 65, ../../css/index.scss */
+.black {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  width: 40px;
+  height: 120px;
+  margin-left: -20px;
+  z-index: 2;
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #1d1d1f), color-stop(81%, #4d4d54));
+  background: -webkit-linear-gradient(top left, #1d1d1f 0%, #4d4d54 81%);
+  background: -moz-linear-gradient(top left, #1d1d1f 0%, #4d4d54 81%);
+  background: -o-linear-gradient(top left, #1d1d1f 0%, #4d4d54 81%);
+  background: -ms-linear-gradient(top left, #1d1d1f 0%, #4d4d54 81%);
+  background: linear-gradient(top left, #1d1d1f 0%, #4d4d54 81%);
+  float: left;
+  border-right: 1px solid #666;
+  -moz-box-shadow: inset 0 -10px 3px 5px black;
+  -webkit-box-shadow: inset 0 -10px 3px 5px black;
+  -o-box-shadow: inset 0 -10px 3px 5px black;
+  box-shadow: inset 0 -10px 3px 5px black;
+}
+
+/* line 83, ../../css/index.scss */
+.black::after {
+  content: "";
+  z-index: 3;
+  width: 70%;
+  height: 9%;
+  background: #39393b;
+  -moz-box-shadow: inset 0 5px 7px -5px #0a0a0a;
+  -webkit-box-shadow: inset 0 5px 7px -5px #0a0a0a;
+  -o-box-shadow: inset 0 5px 7px -5px #0a0a0a;
+  box-shadow: inset 0 5px 7px -5px #0a0a0a;
+  -moz-border-radius: 5px 5px 3px 3px;
+  -webkit-border-radius: 5px 5px 3px 3px;
+  -o-border-radius: 5px 5px 3px 3px;
+  -ms-border-radius: 5px 5px 3px 3px;
+  -khtml-border-radius: 5px 5px 3px 3px;
+  border-radius: 5px 5px 3px 3px;
+  border: #000 solid 1px;
+}
+
+/* line 95, ../../css/index.scss */
+.white:hover, .white-down {
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -moz-box-shadow: 0 6px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 6px 2px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 6px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(30%, #ffffff), color-stop(95%, #b3b3b3));
+  background: -webkit-linear-gradient(top, #ffffff 30%, #b3b3b3 95%);
+  background: -moz-linear-gradient(top, #ffffff 30%, #b3b3b3 95%);
+  background: -o-linear-gradient(top, #ffffff 30%, #b3b3b3 95%);
+  background: -ms-linear-gradient(top, #ffffff 30%, #b3b3b3 95%);
+  background: linear-gradient(top, #ffffff 30%, #b3b3b3 95%);
+}
+
+/* line 105, ../../css/index.scss */
+.black:hover, .black-down {
+  /*
+  width: 40px;
+  height: 120px;
+  */
+  margin-left: -20px;
+  z-index: 2;
+  border-right: 1px solid #666;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3b3b3d), color-stop(81%, #4d4d54));
+  background: -webkit-linear-gradient(top, #3b3b3d 0%, #4d4d54 81%);
+  background: -moz-linear-gradient(top, #3b3b3d 0%, #4d4d54 81%);
+  background: -o-linear-gradient(top, #3b3b3d 0%, #4d4d54 81%);
+  background: -ms-linear-gradient(top, #3b3b3d 0%, #4d4d54 81%);
+  background: linear-gradient(top, #3b3b3d 0%, #4d4d54 81%);
+  -moz-box-shadow: inset 0 -1px 3px 5px black;
+  -webkit-box-shadow: inset 0 -1px 3px 5px black;
+  -o-box-shadow: inset 0 -1px 3px 5px black;
+  box-shadow: inset 0 -1px 3px 5px black;
+}
+
+/* line 121, ../../css/index.scss */
+.black::after:hover, .black-down::after {
+  content: "";
+  z-index: 3;
+  width: 70%;
+  height: 0;
+  background: #39393b;
+  border: #000 solid 1px;
+  -moz-border-radius: 5px 5px 3px 3px;
+  -webkit-border-radius: 5px 5px 3px 3px;
+  -o-border-radius: 5px 5px 3px 3px;
+  -ms-border-radius: 5px 5px 3px 3px;
+  -khtml-border-radius: 5px 5px 3px 3px;
+  border-radius: 5px 5px 3px 3px;
+  -moz-box-shadow: inset 0 5px 10px -5px #0a0a0a;
+  -webkit-box-shadow: inset 0 5px 10px -5px #0a0a0a;
+  -o-box-shadow: inset 0 5px 10px -5px #0a0a0a;
+  box-shadow: inset 0 5px 10px -5px #0a0a0a;
+}
+
+/* line 134, ../../css/index.scss */
+.cf {
+  margin: 0;
+}
+
+/* line 138, ../../css/index.scss */
+.active-octave {
+  border: 1px solid rgba(0, 40, 215, 0.7);
+  background: rgba(0, 100, 255, 0.3);
+  float: left;
+  z-index: 100;
+}
+
+/* line 145, ../../css/index.scss */
+#keyboard_info {
+  /*
+  padding-left: 50px;
+  width: 98%;
+  overflow: hidden;
+  z-index: -100;
+  padding: 10px;
+  @include display-box;
+  */
+  clear: both;
+  margin-left: 1.235%;
+  margin-right: 1.235%;
+}
+
+/* line 158, ../../css/index.scss */
+#keyboard_info td {
+  border: 1px #444 solid;
+  padding: 5px;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* line 165, ../../css/index.scss */
+#base-pitchclass {
+  font-size: 200%;
+  display: inline;
+  float: left;
+  width: 4.938%;
+  margin-right: 1.235%;
+  margin-left: 1.235%;
+}
+
+/* line 176, ../../css/index.scss */
+#controls .dial-wrapper {
+  display: inline;
+  float: left;
+  width: 11.111%;
+  margin-right: 1.235%;
+}
+
+/* line 180, ../../css/index.scss */
+#controls .dial-base {
+  -moz-box-shadow: 0px 20px 8px -5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 20px 8px -5px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0px 20px 8px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 8px -5px rgba(0, 0, 0, 0.4);
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -o-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -khtml-border-radius: 40px;
+  border-radius: 40px;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-box;
+  display: box;
+  background: black;
+}
+
+/* line 189, ../../css/index.scss */
+.ui-dial {
+  display: inline-block;
+  background: #4d4d4d;
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -o-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -khtml-border-radius: 40px;
+  border-radius: 40px;
+  border: 1px solid #333333;
+  -moz-box-shadow: inset 0 0 2px 10px #1a1a1a;
+  -webkit-box-shadow: inset 0 0 2px 10px #1a1a1a;
+  -o-box-shadow: inset 0 0 2px 10px #1a1a1a;
+  box-shadow: inset 0 0 2px 10px #1a1a1a;
+  /*
+  @include background-image(
+    radial-gradient(50% 0%, 8% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    radial-gradient(50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    radial-gradient(0% 50%, 50% 7%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    radial-gradient(100% 50%, 50% 5%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%)
+  );
+  */
+}
+
+/* line 207, ../../css/index.scss */
+.ui-dial::after {
+  content: "";
+  height: 15px;
+  width: 5px;
+  z-index: 4;
+  background: white;
+  -moz-box-shadow: inset 0 5px 7px -5px #0a0a0a;
+  -webkit-box-shadow: inset 0 5px 7px -5px #0a0a0a;
+  -o-box-shadow: inset 0 5px 7px -5px #0a0a0a;
+  box-shadow: inset 0 5px 7px -5px #0a0a0a;
+  -moz-border-radius: 0.5px;
+  -webkit-border-radius: 0.5px;
+  -o-border-radius: 0.5px;
+  -ms-border-radius: 0.5px;
+  -khtml-border-radius: 0.5px;
+  border-radius: 0.5px;
+  display: block;
+  margin: 66px 38px;
+}
+
+/* line 220, ../../css/index.scss */
+.ui-button-text-only .ui-button-text {
+  padding: .2em .5em;
+}
+
+/* line 224, ../../css/index.scss */
+#controls .button-rows {
+  display: inline;
+  float: left;
+  width: 29.63%;
+  margin-right: 1.235%;
+}
+
+/* line 227, ../../css/index.scss */
+#controls .fader {
+  display: inline;
+  float: left;
+  width: 4.938%;
+  margin-right: 1.235%;
+}
+
+/* line 231, ../../css/index.scss */
+canvas#fft {
+  clear: both;
+  margin-left: 1.235%;
+  margin-right: 1.235%;
+}

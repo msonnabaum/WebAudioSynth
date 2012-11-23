@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+require 'em-websocket'
+require 'osc-ruby'
+require 'osc-ruby/em_server'
+require 'json'
+
+@sockets = []
+
+Thread.abort_on_exception=true
+
+Thread.new do
+  EventMachine.run do
+    EventMachine::WebSocket.start(:host => '0.0.0.0', :port => 8081) do |ws|
+      ws.onopen { @sockets << ws }
+      ws.onclose { puts "Connection closed" }
+      ws.onclose { @sockets.delete ws }
+    end
+  end
+end
+
+Thread.new do
+  @server = OSC::EMServer.new(3333)
+  @server.add_method '/**' do |mess|
+    message = { 'args' => mess.to_a, 'route' => mess.address}
+    @sockets.each {|s| s.send(message.to_json)}
+  end
+
+  @server.run
+end
+
+sleep

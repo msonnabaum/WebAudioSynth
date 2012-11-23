@@ -1,0 +1,22 @@
+<div id="keys-playable">
+  <div id="keys-wrapper" style="margin-left: <%= @margin_left %>px">
+    <% for i in [1..@octaves]: %>
+    <% offset = (12 * i) + (@pitch_offset - 12) %>
+    <div id="octave-wrapper-<%= i %>" class="octave_wrapper <%= "active-octave" if @pos is i %>">
+      <div id="<%= offset %>" class="key cf white"></div>
+      <div id="<%= offset + 1 %>" class="key black"></div>
+      <div id="<%= offset + 2 %>" class="key white"></div>
+      <div id="<%= offset + 3 %>" class="key black"></div>
+      <div id="<%= offset + 4 %>" class="key white"></div>
+      <div id="<%= offset + 5 %>" class="key cf white"></div>
+      <div id="<%= offset + 6 %>" class="key black"></div>
+      <div id="<%= offset + 7 %>" class="key white"></div>
+      <div id="<%= offset + 8 %>" class="key black"></div>
+      <div id="<%= offset + 9 %>" class="key white"></div>
+      <div id="<%= offset + 10 %>" class="key black"></div>
+      <div id="<%= offset + 11 %>" class="key white"></div>
+      <div style="clear:right"></div>
+    </div>
+    <% end %>
+  </div>
+</div>
